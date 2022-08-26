@@ -17,6 +17,4 @@
 
 ## Este projeto foi desenvolvido como um Full-Stack, esta é a parte do Front-end, o código do Back-end e sua documentação, você pode conferir no link abaixo.
 
-#
-
 ## Link do GitHub da API: https://github.com/gabrielsuch/Express-Doit
