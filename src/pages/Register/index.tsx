@@ -41,7 +41,7 @@ const Register = () => {
         name: yup.string().required("Campo Obrigatório"),
         email: yup.string().required("Campo Obrigatório").email(),
         password: yup.string().required("Campo Obrigatório"),
-        confirmPassword: yup.string().required("Campo Obrigatório")
+        confirmPassword: yup.string().required("Campo Obrigatório").oneOf([yup.ref("password")], "Senhas devem ser iguais")
     })
 
     const {register, handleSubmit, formState: {errors}} = useForm<DataProps>({

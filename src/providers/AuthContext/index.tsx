@@ -4,6 +4,8 @@ import {api} from "../../services/index"
 
 import {useHistory} from "react-router-dom"
 
+import {toast} from "react-toastify"
+
 
 interface ChildrenProps {
     children: ReactNode
@@ -71,9 +73,11 @@ export const AuthProvider = ({children}: ChildrenProps) => {
 
         api.post("/user/register", newData)
         .then((_) => {
+            toast.success("Conta Criada com Sucesso!")
             history.push("/login")
         })
         .catch((err) => {
+            toast.error("Erro na Criação da Conta. Pode ser que este email já existe.")
             console.log(err)
         })
         .finally(() => {
@@ -84,6 +88,8 @@ export const AuthProvider = ({children}: ChildrenProps) => {
     const login = (data: LoginProps) => {
         api.post("/user/login", data)
         .then((response) => {
+            toast.success("Seja Bem-vindo!")
+
             const {accessToken} = response.data
             
             localStorage.setItem("@DoIt:token", accessToken)
@@ -93,6 +99,7 @@ export const AuthProvider = ({children}: ChildrenProps) => {
             history.push("/dashboard")
         })
         .catch((err) => {
+            toast.error("Dados incorretos.")
             console.log(err)
         })
         .finally(() => {

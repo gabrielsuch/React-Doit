@@ -11,7 +11,7 @@ const ModalProfile = () => {
 
     return (
         <Container>
-            <ProfileName>Ana Beatriz</ProfileName>
+            <ProfileName>Your Name</ProfileName>
             <Logout>
                 <Square onClick={() => logout()}>
                     <FiLogOut/>     
