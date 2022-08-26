@@ -13,8 +13,8 @@
 - Usuário logado pode realizar seu Logout.
 - Somente usuários logados podem interagir com as tarefas.
 
-#
+### Link da Aplicação Front-end: https://doit-project.vercel.app/
 
-### Este projeto foi desenvolvido como um Full-Stack, esta é a parte do Front-end, o código do Back-end e sua documentação, você pode conferir no link abaixo.
+## Este projeto foi desenvolvido como um Full-Stack, esta é a parte do Front-end, o código do Back-end e sua documentação, você pode conferir no link abaixo.
 
-### Link da Aplicação Back-end: https://github.com/gabrielsuch/Express-Doit
+### Link do código Back-end: https://github.com/gabrielsuch/Express-Doit
