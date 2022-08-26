@@ -15,7 +15,7 @@
 
 #
 
-## Este projeto foi desenvolvido como um Full-Stack, esta é a parte do Front-end, o código do Back-end e o link da API, você pode conferir no link abaixo.
+## Este projeto foi desenvolvido como um Full-Stack, esta é a parte do Front-end, o código do Back-end e sua documentação, você pode conferir no link abaixo.
 
 #
 
